@@ -62,7 +62,7 @@ std::string Requests::remove(std::string url, Retorno format) const{
 	}
 }
 
-nlohmann::json Requests::to_json(std::string text) const{
+nlohmann::json Requests::to_json(std::string text){
 	try {
 		nlohmann::json value = nlohmann::json::parse(text);
 		return value;
